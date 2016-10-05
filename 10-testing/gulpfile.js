@@ -22,7 +22,7 @@ gulp.task('lint', () =>
 );
 
 gulp.task('test', ['lint', 'build'], () =>
-  gulp.src('lib/test/**/*.js', { read: false })
+  gulp.src('lib/test/**/*.js')
     .pipe(mocha())
 );
 
